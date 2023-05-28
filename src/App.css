@@ -1,0 +1,13 @@
+*{
+  margin:0;
+  padding: 0;
+}
+.outline{
+  background-image: url(./Netflix.png);
+  width: 100%;
+  height: 100vh;
+  background-position: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
