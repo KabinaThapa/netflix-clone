@@ -1,13 +1,28 @@
 *{
   margin:0;
   padding: 0;
+  
 }
-.outline{
-  background-image: url(./Netflix.png);
-  width: 100%;
+.container-fluid{
+   background-image: url(./Netflix.png);
+  background-size: cover;
   height: 100vh;
-  background-position: cover;
   background-position: center;
-  background-repeat: no-repeat;
 
+
+}
+
+
+.header{
+  background-color: black;
+ 
+}
+.dropdown ul li{
+  list-style: none;
+}
+.dropdownBox{
+  width:6rem;
+  background-color: beige;
+  text-align: center;
+  display: flex;
 }
