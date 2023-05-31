@@ -1,5 +1,9 @@
 import React from "react";
 import { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+;
+import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import Brandlogo from "./Netflix-Brand-Logo.png";
 
 const Dropmenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,37 +12,22 @@ const Dropmenu = () => {
   };
   return (
     <>
-      <div className="dropdown ">
-        <button
-          className="btn btn-secondary dropdown-toggle"
-          type="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="False"
-          onClick={handledrop}
-        >
-          English
-        </button>
-        {isOpen ? (
-          <div class="dropdownBox d-flex m-0">
-            <ul>
-              <li>English</li>
-              <li>Spanish</li>
-            </ul>
-          </div>
-        ) : (
-          <div> </div>
-        )}
-      </div>
+      <Navbar>
+        <Container>
+          <Navbar.Brand>
+           <img src={Brandlogo} alt="logo" width="200px" height="180px"/>
+          </Navbar.Brand>
+          <Nav className="left">
+            <NavDropdown title="English">
+              <NavDropdown.Item>English</NavDropdown.Item>
+              <NavDropdown.Item>English</NavDropdown.Item>
+            </NavDropdown>
+            </Nav>
+            <Nav.Link href="#SignIN"> SignIN</Nav.Link>
 
-      <div className="dropdown">
-        <button
-          className="btn btn-secondary dropdown-toggle"
-          type="button"
-          data-bs-toggle="dropdown"
-        >
-          Sign In
-        </button>
-      </div>
+        </Container>
+      </Navbar>
+      
     </>
   );
 };

@@ -1,20 +1,20 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap/js/dist/dropdown"
 import Dropmenu from './Dropmenu'
 import "./App.css"
-
+import Brandlogo from './Netflix-Brand-Logo.png'
 
 function App() {
   return (
     <>
-      <div className="container-fluid">
-        <header className="header d-flex">
+      <div className="container-fluid d-flex justify-content-center">
+        
           <Dropmenu/>
-          <div>
+          
+         
    
-    </div>
-        </header>
+    
+        
       </div>
     </>
   );
