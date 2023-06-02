@@ -1,15 +1,17 @@
 
 
 .outline{
- background: linear-gradient(to bottom,rgba(21, 18, 18, 0.758),rgba(35, 41, 50, 0.548)), url(./Netflix.png);
+ background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.881), black), url(./Netflix.png);
 
- height: 100vh;
+ 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column ;
   justify-content: center; 
+  box-shadow: 120px,100px,250px, rgb(0, 0, 0), inset -120px -100px 250px black;
+  
 }
 .container{
   display: flex;
@@ -80,7 +82,9 @@ p {
 }
 
 .box2{
-  margin-top: 2rem;
+  background: linear-gradient(to bottom, rgba(29, 28, 28, 0.76));
   height:auto;
   border:solid;
+  margin-top: 2rem;
+  
 }

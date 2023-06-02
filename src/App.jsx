@@ -11,11 +11,11 @@ function App() {
      <div className="outline">
       
           <MainPage/>
-          
+         
           <Body/>
-          
-          
           </div>
+          
+         
       
     </>
   );
