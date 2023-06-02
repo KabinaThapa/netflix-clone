@@ -8,13 +8,13 @@ function App() {
   return (
     <>
     
-     <div className="container-fluid">
+     <div className="outline">
       
           <MainPage/>
-          <div className="box2">
-            
-          </div>
+          
           <Body/>
+          
+          
           </div>
       
     </>
