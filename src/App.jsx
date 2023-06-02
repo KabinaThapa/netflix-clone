@@ -1,21 +1,22 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
-import Dropmenu from './Dropmenu'
+import MainPage from './MainPage'
 import "./App.css"
-import Brandlogo from './Netflix-Brand-Logo.png'
+import Body from './Body'
 
 function App() {
   return (
     <>
-      <div className="container-fluid d-flex justify-content-center">
-        
-          <Dropmenu/>
-          
-         
-   
     
-        
-      </div>
+     <div className="container-fluid">
+      
+          <MainPage/>
+          <div className="box2">
+            
+          </div>
+          <Body/>
+          </div>
+      
     </>
   );
 }
