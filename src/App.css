@@ -1,35 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+ height: auto;
+ 
+}
+body{
+  background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.699), black);
+}
 
 
 .outline{
- background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.881), black), url(./Netflix.png);
-
- 
+ background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.418), black), url(./Netflix.png);
   background-size: cover;
+ height: 100vh;
+
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column ;
   justify-content: center; 
-  box-shadow: 120px,100px,250px, rgb(0, 0, 0), inset -120px -100px 250px black;
+  width:100%;
+  
+  
   
 }
+.outline2{
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.929));
+  
+
+}
+
 .container{
   display: flex;
   justify-content: center;
   flex-direction: column;
+ 
   border: solid;
 }
 
 .navbar {
-  ;
+  
  padding:0;
-  background-color: aqua;
+  
   display: flex;
   justify-content: center
 }
 
 .left {
-  background-color: antiquewhite;
+  
   margin-left: auto;
   display: flex;
   justify-content: center;
@@ -38,11 +56,9 @@
 
 }
 
-a {
-  padding-left:0.5rem;
-  padding-right: 2rem;
-  color: black;
-}
+
+ 
+
 h1, h3,
 p {
   color: white;
@@ -63,28 +79,131 @@ p {
 .box1-1 {
   padding: 1rem;
   border: solid;
-  background-color: beige;
+  
 }
 .box1-2{
   padding:0.5rem;
   border:solid;
   width:100%;
   display: flex;
-  background-color: gray;
+  
 }
 .btn{
   margin-left: 1rem;
   width:16rem;
   height:3rem;
+  
 }
 .form-control{
   width:30rem;
 }
+b
 
-.box2{
-  background: linear-gradient(to bottom, rgba(29, 28, 28, 0.76));
-  height:auto;
-  border:solid;
-  margin-top: 2rem;
   
+
+.box2 .container{
+ background-color: rgba(50, 56, 65, 0.5);
+  
+  
+}
+.box2-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.border{
+  border:solid;
+  color: antiquewhite;
+  width:60rem;
+}
+.box2-1-heading{
+  display: flex;
+  flex-direction: column;
+}
+.box2 .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(12, 12, 38, 0.637);
+}
+.nav-link{
+  color:aliceblue;
+  font-size: 1.5rem;
+}
+.left a{
+  border:solid;
+  border-width: 1px;
+  border-radius:0.5rem;
+  width:10rem;
+  text-align: center;
+  text-decoration: none;
+
+}
+.Sign{
+  color: aliceblue;
+  padding: 0.5rem;
+  background-color: red;
+  border-color: red;
+  
+ 
+}
+.lastpage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  
+}
+.lastpage .container{
+  width:70rem;
+}
+.accordion-item{
+  
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgba(54, 54, 151, 0.377);
+  color: white;
+  
+}
+.accordion-button{
+  background-color: rgba(70, 70, 117, 0.694);
+  color: white;
+  font-size:x-large;
+  width:100%;
+  padding: 3rem;
+}
+.lastpage h1{
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+}
+
+.accordion{
+  color:white;
+  width: 100%;
+}
+
+.accordion-button::after{
+  color: white;
+}
+button{
+  color: white;
+  width: 100%;
+}
+.ebox{
+  width:100%;
+  display: flex;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  
+}
+.lastpage h3{
+  margin-top: 2rem;
+  margin-right: auto;
+}
+.lbox{
+  display: flex;
+  flex-direction: column;
 }

@@ -51,7 +51,7 @@ const MainPage = () => {
           </div>
         </nav>
         <div className="box1">
-          <div className="container-fluid bg-primary">
+          <div className="container-fluid">
             <h1>Unlimited movies, TV</h1>
             <h1>shows, and more</h1>
             <p>Watch anywhere. Cancel anytime.</p>
