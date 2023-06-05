@@ -6,6 +6,7 @@ import Brandlogo from "./Netflix-Brand-Logo.png";
 
 const MainPage = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   const handledrop = () => {
     setIsOpen(!isOpen);
   };
@@ -32,7 +33,7 @@ const MainPage = () => {
                   English
                 </a>
                 {isOpen ? (
-                  <div className="dropdown-menu">
+                  <div className="dropdown-menu w-500 h-500">
                     <a className="dropdown-item" href="#">
                       English
                     </a>

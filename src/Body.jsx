@@ -1,46 +1,95 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import img1 from "./img1.png";
 import img2 from "./img2.png";
 import img3 from "./img3.png";
 import img4 from "./img4.png";
 const Body = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handledrop = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className="box2">
       <div className="container">
+       
+        <div className="box2-1-md">
+          <div className="box2-1-heading">
+            <h1>Enjoy on your TV</h1>
+            <h4>Watch on mdart TVs, Playstation, Xbox, </h4>
+            <h4>Chromecast, Apple TV, Blu-ray players, and more. </h4>
+          </div>
+          <div className="img">
+          <img className="img-fluid" src={img1} alt="img1" width="500px" height="400px" /></div>
+        </div>
         <div className="box2-1">
           <div className="box2-1-heading">
             <h1>Enjoy on your TV</h1>
-            <h3>Watch on Smart TVs, Playstation, Xbox, </h3>
-            <h3>Chromecast, Apple TV, Blu-ray players, and more. </h3>
+            <h4>Watch on mdart TVs, Playstation, Xbox, </h4>
+            <h4>Chromecast, Apple TV, Blu-ray players, and more. </h4>
           </div>
-          <img src={img1} alt="img1" width="500px" height="400px" />
+          <div className="img">
+          <img className="img-fluid" src={img1} alt="img1" width="500px" height="400px" /></div>
         </div>
         <div className="border"></div>
+        
+        <div className="box2-1-md">
+          <div className="img">
+          <img className="img-fluid" src={img2} alt="img2" width="500px" height="400px" /></div>
+          <div className="box2-1-heading">
+            <h1>Watch everywhere</h1>
+            <h4>Stream unlimited movies and TV shows on your </h4>
+            <h4>phone, tablet, laptop, and TV.</h4>
+          </div>
+        </div>
         <div className="box2-1">
-          <img src={img2} alt="img2" width="500px" height="400px" />
-          <div classname="box2-1-heading">
-            <h1>Enjoy on your TV</h1>
-            <h3>Watch on Smart TVs, Playstation, Xbox, </h3>
-            <h3>Chromecast, Apple TV, Blu-ray players, and more. </h3>
+        <div className="img">
+        
+          <img className="img-fluid" src={img2} alt="img2" width="500px" height="400px" /></div>
+          <div className="box2-1-heading">
+            <h1>Watch everywhere</h1>
+            <h4>Stream unlimited movies and TV shows on your </h4>
+            <h4>phone, tablet, laptop, and TV.</h4>
           </div>
         </div>
         <div className="border"></div>
+        
+        <div className="box2-1-md">
+          <div className="box2-1-heading">
+          <h1>Create profiles for kids</h1>
+            <h4>Send kids on adventures with their favorite  </h4>
+            <h4>characters in a space made just for them—free with your membership. </h4>
+          </div>
+          <div className="img">
+          <img className="img-fluid" src={img3} alt="img3" width="500px" height="400px" /></div>
+        </div>
         <div className="box2-1">
           <div className="box2-1-heading">
-            <h1>Enjoy on your TV</h1>
-            <h3>Watch on Smart TVs, Playstation, Xbox, </h3>
-            <h3>Chromecast, Apple TV, Blu-ray players, and more. </h3>
+          <h1>Create profiles for kids</h1>
+            <h4>Send kids on adventures with their favorite  </h4>
+            <h4>characters in a space made just for them—free </h4> <h4>with your membership. </h4>
           </div>
-          <img src={img3} alt="img3" width="500px" height="400px" />
+          <div className="img">
+          <img className="img-fluid" src={img3} alt="img3" width="500px" height="400px" /></div>
         </div>
         <div className="border"></div>
-        <div className="box2-1">
-          <img src={img4} alt="img4" width="500px" height="400px" />
+        <div className="box2-1-md">
+        <div className="img">
+          <img className="img-fluid" src={img4} alt="img4" width="500px" height="400px" /></div>
           <div className="box2-1-heading">
-            <h1>Enjoy on your TV</h1>
-            <h3>Watch on Smart TVs, Playstation, Xbox, </h3>
-            <h3>Chromecast, Apple TV, Blu-ray players, and more. </h3>
+            <h1>Download your shows to watch offline</h1>
+            <h4>Only available on ad-free plans.</h4>
+            
+          </div>
+        </div>
+        <div className="box2-1">
+        <div className="img">
+          <img className="img-fluid" src={img4} alt="img4" width="500px" height="400px" /></div>
+          <div className="box2-1-heading">
+          <h1>Download your shows </h1>
+           <h1> to watch offline</h1>
+            <h4>Only available on ad-free plans.</h4>
           </div>
         </div>
       </div>
@@ -94,7 +143,7 @@ const Body = () => {
                 data-bs-parent="accordionFlushExample"
               >
                 <div className="accordion-body">
-                  Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+                  Watch Netflix on your mdartphone, tablet, mdart TV, laptop, or
                   streaming device, all for one fixed monthly fee. Plans range
                   from $6.99 to $19.99 a month. No extra costs, no contracts.
                 </div>
@@ -116,11 +165,11 @@ const Body = () => {
                 className="accordion-collapse collapse"
                 data-bs-parent="accordionFlushExample"
               >
-                <div class="accordion-body">
+                <div className="accordion-body">
                   Watch anywhere, anytime. Sign in with your Netflix account to
                   watch instantly on the web at netflix.com from your personal
                   computer or on any internet-connected device that offers the
-                  Netflix app, including smart TVs, smartphones, tablets,
+                  Netflix app, including mdart TVs, mdartphones, tablets,
                   streaming media players and game consoles. You can also
                   download your favorite shows with the iOS, Android, or Windows
                   10 app. Use downloads to watch while you're on the go and
@@ -220,26 +269,202 @@ const Body = () => {
             </button>
           </div>
           <p>Questions? Call 1-844-505-2993</p>
+          <div className="lbox-md">
+            <ul className="list1">
+              <li>
+                {" "}
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Investor Relations</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Buy Gift Cards</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Cookie Preferences</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Legal Notices</a>
+              </li>
+            </ul>
+            <ul className="list2">
+              <li>
+                {" "}
+                <a href="#">Help Center</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Jobs</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Way to Watch</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Corporate Information</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Only on Netflix</a>
+              </li>
+            </ul>
+            <ul className="list2">
+              <li>
+                {" "}
+                <a href="#">Account</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Netflix Shop</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Terns of Use</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Do not Sell or share My Personal</a>
+              </li>
+
+              <li>
+                <a href="#">Information</a>
+              </li>
+            </ul>
+            <ul className="list4">
+              <li>
+                {" "}
+                <a href="#">Media Center</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Redeem Gift Cards</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Privacy</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Speed Test</a>
+              </li>
+            </ul>
+          </div>
           <div className="lbox">
-            <h4>FAQ
-Help Center
-Account
-Media Center
-Investor Relations
-Jobs
-Netflix Shop
-Redeem Gift Cards
-Buy Gift Cards
-Ways to Watch
-Terms of Use
-Privacy
-Cookie Preferences
-Corporate Information
-Contact Us
-Speed Test
-Legal Notices
-Only on Netflix
-Do Not Sell or Share My Personal Information</h4>
+            <ul className="list1">
+              <li>
+                {" "}
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Investor Relations</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Buy Gift Cards</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Cookie Preferences</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Legal Notices</a>
+              </li>
+            </ul>
+            <ul className="list2">
+              <li>
+                {" "}
+                <a href="#">Help Center</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Jobs</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Way to Watch</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Corporate Information</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Only on Netflix</a>
+              </li>
+            </ul>
+            <ul className="list2">
+              <li>
+                {" "}
+                <a href="#">Account</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Netflix Shop</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Terns of Use</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Do not Sell or share My Personal</a>
+              </li>
+
+              <li>
+                <a href="#">Information</a>
+              </li>
+            </ul>
+            <ul className="list4">
+              <li>
+                {" "}
+                <a href="#">Media Center</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Redeem Gift Cards</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Privacy</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Speed Test</a>
+              </li>
+            </ul>
+          </div>
+          <div className="dropdown">
+            <button
+              className="btn"
+              onClick={handledrop}
+              type="button"
+             
+            >
+              English
+            </button>
+            
+            {isOpen? (
+              <div className="dropdown-menu w-25 h-25">
+                <a className="dropdown-item">English</a>
+                <a className="dropdown-item">English</a>
+              </div>
+            ):(<div> </div>) }
           </div>
         </div>
       </div>

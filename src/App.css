@@ -107,19 +107,42 @@ b
   
 }
 .box2-1{
+  width:100%;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+
   display: flex;
-  justify-content: space-between;
+ justify-content: center;
+ 
+ 
   align-items: center;
  
 }
+.img{
+  width:30rem;
+ 
+  padding-left: 1rem;
+}
 .border{
   border:solid;
-  color: antiquewhite;
-  width:60rem;
+  border-color: rgba(83, 74, 150, 0.742);
+  width:40rem;
+  margin: auto;
 }
 .box2-1-heading{
   display: flex;
+ 
   flex-direction: column;
+}
+.box2-1-heading h1{
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.box2-1 h4{
+ 
+  color: rgb(168, 179, 244);
+
 }
 .box2 .container{
   display: flex;
@@ -203,7 +226,83 @@ button{
   margin-top: 2rem;
   margin-right: auto;
 }
+.lastpage p{
+  margin-top: 5rem;
+  margin-right: auto;
+}
+
 .lbox{
   display: flex;
-  flex-direction: column;
+  width:100%;
+  justify-content: space-between; 
+  margin-top: 1rem;
+}
+.lbox a{
+  font-size: 17px;
+  color:azure;
+  font-family:sans-serif;
+ 
+}
+.lbox li{
+  list-style: none;
+  margin-bottom: 1rem;
+  
+  
+}
+.lbox ul{
+  margin-right: auto;
+  padding-left: 0;
+}
+.lastpage .dropdown-menu{
+  width:30rem;
+  background-color: aqua;
+  height:20rem;
+}
+@media (max-width:767px){
+  .box2-1{
+    display:none
+  }
+  .box2-1-md h1{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .box2-1-md h4{
+   
+    color: rgb(168, 179, 244);
+
+  }
+  
+}
+@media (min-width:768px){
+  .box2-1-md{
+    display: none;
+  }
+  
+}
+@media(max-width:767px){
+  .lbox{
+    display:none
+  }
+  .lbox-md ul{
+    list-style: none;
+  }
+  .lbox-md a{
+    color: aliceblue;
+  }
+  .lastpage p{
+    margin: auto;
+    padding-bottom: 2rem;
+    font-size: 20px;
+  }
+  .ebox{
+    margin-bottom: 5rem;
+  }
+    
+}
+@media(min-width:768px){
+  .lbox-md{
+    display: none;
+  }
+ 
+  
 }
