@@ -1,9 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom"
+import Body from "./Body"
+
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Dropdown } from "bootstrap";
+
 import Brandlogo from "./Netflix-Brand-Logo.png";
+import { Link } from "react-router-dom";
+
 
 const MainPage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +16,7 @@ const MainPage = () => {
   };
   return (
     <>
+    <div className="outline">
       <div className="container">
         <nav className="navbar navbar-expand-lg ">
           <img
@@ -43,12 +47,9 @@ const MainPage = () => {
                   <div></div>
                 )}
               </li>
-
-              <li className="nav-link">
-                <a className="Sign" href="">
-                  Sign In
-                </a>
-              </li>
+              <li>
+                <Link to ="SignIn">SignIn</Link>
+              </li>  
             </ul>
           </div>
         </nav>
@@ -76,6 +77,12 @@ const MainPage = () => {
           </div>
         </div>
       </div>
+      
+      </div>
+      <div className="outline2">
+        <Body />
+      </div>
+      
     </>
   );
 };

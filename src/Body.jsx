@@ -14,10 +14,10 @@ const Body = () => {
     <div className="box2">
       <div className="container">
        
-        <div className="box2-1-md">
+        <div className="box2-1-sm">
           <div className="box2-1-heading">
             <h1>Enjoy on your TV</h1>
-            <h4>Watch on mdart TVs, Playstation, Xbox, </h4>
+            <h4>Watch on smart TVs, Playstation, Xbox, </h4>
             <h4>Chromecast, Apple TV, Blu-ray players, and more. </h4>
           </div>
           <div className="img">
@@ -26,7 +26,7 @@ const Body = () => {
         <div className="box2-1">
           <div className="box2-1-heading">
             <h1>Enjoy on your TV</h1>
-            <h4>Watch on mdart TVs, Playstation, Xbox, </h4>
+            <h4>Watch on smart TVs, Playstation, Xbox, </h4>
             <h4>Chromecast, Apple TV, Blu-ray players, and more. </h4>
           </div>
           <div className="img">
@@ -34,7 +34,7 @@ const Body = () => {
         </div>
         <div className="border"></div>
         
-        <div className="box2-1-md">
+        <div className="box2-1-sm">
           <div className="img">
           <img className="img-fluid" src={img2} alt="img2" width="500px" height="400px" /></div>
           <div className="box2-1-heading">
@@ -56,7 +56,7 @@ const Body = () => {
         </div>
         <div className="border"></div>
         
-        <div className="box2-1-md">
+        <div className="box2-1-sm">
           <div className="box2-1-heading">
           <h1>Create profiles for kids</h1>
             <h4>Send kids on adventures with their favorite  </h4>
@@ -75,7 +75,7 @@ const Body = () => {
           <img className="img-fluid" src={img3} alt="img3" width="500px" height="400px" /></div>
         </div>
         <div className="border"></div>
-        <div className="box2-1-md">
+        <div className="box2-1-sm">
         <div className="img">
           <img className="img-fluid" src={img4} alt="img4" width="500px" height="400px" /></div>
           <div className="box2-1-heading">
@@ -144,7 +144,7 @@ const Body = () => {
                 data-bs-parent="accordionFlushExample"
               >
                 <div className="accordion-body">
-                  Watch Netflix on your mdartphone, tablet, mdart TV, laptop, or
+                  Watch Netflix on your smartphone, tablet, smart TV, laptop, or
                   streaming device, all for one fixed monthly fee. Plans range
                   from $6.99 to $19.99 a month. No extra costs, no contracts.
                 </div>
@@ -170,7 +170,7 @@ const Body = () => {
                   Watch anywhere, anytime. Sign in with your Netflix account to
                   watch instantly on the web at netflix.com from your personal
                   computer or on any internet-connected device that offers the
-                  Netflix app, including mdart TVs, mdartphones, tablets,
+                  Netflix app, including smart TVs, smartphones, tablets,
                   streaming media players and game consoles. You can also
                   download your favorite shows with the iOS, Android, or Windows
                   10 app. Use downloads to watch while you're on the go and
@@ -270,7 +270,7 @@ const Body = () => {
             </button>
           </div>
           <p>Questions? Call 1-844-505-2993</p>
-          <div className="lbox-md">
+          <div className="lbox-sm">
             <ul className="list1">
               <li>
                 {" "}
