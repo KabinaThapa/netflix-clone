@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Dropdown } from "bootstrap";
 import Brandlogo from "./Netflix-Brand-Logo.png";
@@ -44,7 +45,7 @@ const MainPage = () => {
               </li>
 
               <li className="nav-link">
-                <a className="Sign" href="#">
+                <a className="Sign" href="">
                   Sign In
                 </a>
               </li>

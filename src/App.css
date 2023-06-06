@@ -5,12 +5,12 @@
  
 }
 body{
-  background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.699), black);
+  background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.612), black);
 }
 
 
 .outline{
- background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.418), black), url(./Netflix.png);
+ background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.708), black), url(./Netflix.png);
   background-size: cover;
  height: 100vh;
 
@@ -26,6 +26,7 @@ body{
 }
 .outline2{
   background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.929));
+  border: solid;
   
 
 }
@@ -123,11 +124,14 @@ b
  
   padding-left: 1rem;
 }
-.border{
-  border:solid;
-  border-color: rgba(83, 74, 150, 0.742);
-  width:40rem;
-  margin: auto;
+.box2 .border{
+  
+  
+  width:80%;
+ 
+ 
+ 
+  
 }
 .box2-1-heading{
   display: flex;

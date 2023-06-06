@@ -51,6 +51,7 @@ const Body = () => {
             <h1>Watch everywhere</h1>
             <h4>Stream unlimited movies and TV shows on your </h4>
             <h4>phone, tablet, laptop, and TV.</h4>
+           
           </div>
         </div>
         <div className="border"></div>
