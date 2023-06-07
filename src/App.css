@@ -1,38 +1,25 @@
 *{
   margin: 0;
   padding: 0;
-  
-
- 
 }
 body{
   background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.612), black);
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  width: 100%;
 }
-
-
 .outline{
  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.708), black), url(./Netflix.png);
   background-size: cover;
- height: 100vh;
-
-  background-position: center;
+  height: 100vh;
+ background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column ;
   justify-content: center; 
-
-  
-  
-  
 }
 .outline2{
   background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.929));
-  border: solid;
-  
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -40,79 +27,87 @@ body{
   display: flex;
   justify-content: center;
   flex-direction: column;
- 
-  border: solid;
 }
 
 .navbar {
-  
- padding:0;
-  
   display: flex;
-  justify-content: center
+  justify-content: center;
+  margin-top: 1rem;
+  border: solid;
+  padding: 0;
+  background-color: black;
+  
 }
 h1, h3,
 p {
   color: white;
   text-align: left;
+  
 }
+.box1 h1{
+  font-weight: bolder;
+  font-size:4.5rem;
+  }
+  .box1 p{
+    font-size: 25px;
+    font-weight: bold;
+  }
  .box1 .container-fluid{
     width:100%;
     padding: 2rem;
     display: flex;
     justify-content: center;
     flex-direction:column;
-    
-  }
-
-
+    }
 .box1-1 {
+  margin-top: 4rem;
   padding: 1rem;
-  border: solid;
-  
-}
+ width: 100%;
+ border: solid;
+ background-color: rgba(24, 24, 28, 0.932);
+ border-image: linear-gradient(to right, rgba(255, 0, 0, 0.758),blue);
+ border-width: 5px;
+ border-image-slice: 1;  
+  }
 .box1-2{
   padding:0.5rem;
-  border:solid;
   width:100%;
   display: flex;
-  
 }
-
-.box1-2 .btn{
+ .box1-2 .btn{
   margin-left: 1rem;
   width:16rem;
-  height:3rem;
-  
-}
-.form-control{
+  height:4rem;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: red;
+  color: aliceblue; 
+  }
+.box1-2 .form-control{
   width:30rem;
+  background-color: rgba(52, 48, 48, 0.546);
+  backdrop-filter: blur(5px);
+  border-color: gray;
+ 
 }
-b
-
-  
-
-.box2 .container{
- background-color: rgba(50, 56, 65, 0.5);
-  
-  
-}
+.box1-2 input::placeholder{
+  font-size: 25px;
+  color: aliceblue;
+ }
+ .box2{
+  width:100%;
+  margin: 4rem;
+  background-color: rgba(12, 12, 38, 0.637);
+  padding: 2rem;
+ }
 .box2-1{
   width:100%;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
-
   display: flex;
- justify-content: center;
- 
- 
+  justify-content: center;
   align-items: center;
  
-}
-.img{
-  width:30rem;
- 
-  padding-left: 1rem;
 }
 .box2 .border{
   width:80%;  
@@ -125,72 +120,85 @@ b
 .box2-1-heading h1{
   text-align: left;
   margin-bottom: 2rem;
+  font-weight: bold;
 }
 
 .box2-1 h4{
  
-  color: rgb(168, 179, 244);
+  color: rgba(229, 230, 234, 0.927);
 
 }
 .box2 .container{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(12, 12, 38, 0.637);
-}
-
-.left {
   
+}
+.left {
   margin-left: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
+ 
+ 
 
 }
-.dropdown1{
+.left .dropdown{
   display: flex;
   flex-direction: column;
+  
+  
 }
 .left .btn{
   border: solid;
   color: aliceblue;
-}
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 .left .dropmenu, a{
+ 
   width:8rem;
   text-align: center;
   text-decoration: none;
   color: aliceblue;
-  
-
+  position:relative;
+}
+.Lsignin{
+  width:7rem;
+  background-color: red;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 0.2rem;
+}
+.left .Lsignin a{
+  font-size: 25px;  
 }
 .Sign{
   color: aliceblue;
   padding: 0.5rem;
   background-color: red;
   border-color: red;
-  
- 
-}
+  }
 .lastpage{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: solid;
-  
-}
+  }
 .lastpage .container{
   width:70rem;
 }
 .accordion-item{
-  
   margin-top: 1rem;
   margin-bottom: 1rem;
   background-color: rgba(54, 54, 151, 0.377);
   color: white;
-  
-}
+  }
 .accordion-button{
   background-color: rgba(70, 70, 117, 0.694);
   color: white;
@@ -208,9 +216,7 @@ b
   width: 100%;
 }
 
-.accordion-button::after{
-  color: white;
-}
+
 button{
   color: white;
   width: 100%;
@@ -221,8 +227,27 @@ button{
   margin-right: auto;
   margin-bottom: 2rem;
   margin-top: 1rem;
-  
-}
+  }
+  .ebox .btn{
+    margin-left: 1rem;
+    width:16rem;
+    height:4rem;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: red;
+    color: aliceblue; 
+    }
+  .ebox .form-control{
+    width:30rem;
+    background-color: rgba(52, 48, 48, 0.546);
+    backdrop-filter: blur(5px);
+    border-color: gray;
+   
+  }
+  .ebox input::placeholder{
+    font-size: 25px;
+    color: aliceblue;
+   }
 .lastpage h3{
   margin-top: 2rem;
   margin-right: auto;
@@ -259,7 +284,7 @@ button{
   background-color: aqua;
   height:20rem;
 }
-@media (max-width:320px){
+@media (max-width:576px){
   .box2-1{
     display:none
   }
@@ -272,18 +297,16 @@ button{
     color: rgb(168, 179, 244);
 
   }
-  body{
-    overflow: hidden;
-  }
+  
   
 }
-@media (min-width:321px){
+@media (min-width:577px){
   .box2-1-sm{
     display: none;
   }
   
 }
-@media(max-width:320px){
+@media(max-width:576px){
   .lbox{
     display:none
   }
@@ -303,7 +326,7 @@ button{
   }
     
 }
-@media(min-width:321px){
+@media(min-width:576px){
   .lbox-sm{
     display: none;
   }

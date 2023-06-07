@@ -4,6 +4,7 @@ import img1 from "./img1.png";
 import img2 from "./img2.png";
 import img3 from "./img3.png";
 import img4 from "./img4.png";
+import { AiOutlineGlobal, AiOutlineRight } from "react-icons/ai";
 const Body = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -13,7 +14,6 @@ const Body = () => {
   return (
     <div className="box2">
       <div className="container">
-       
         <div className="box2-1-sm">
           <div className="box2-1-heading">
             <h1>Enjoy on your TV</h1>
@@ -21,7 +21,14 @@ const Body = () => {
             <h4>Chromecast, Apple TV, Blu-ray players, and more. </h4>
           </div>
           <div className="img">
-          <img className="img-fluid" src={img1} alt="img1" width="500px" height="400px" /></div>
+            <img
+              className="img-fluid"
+              src={img1}
+              alt="img1"
+              width="500px"
+              height="400px"
+            />
+          </div>
         </div>
         <div className="box2-1">
           <div className="box2-1-heading">
@@ -30,13 +37,27 @@ const Body = () => {
             <h4>Chromecast, Apple TV, Blu-ray players, and more. </h4>
           </div>
           <div className="img">
-          <img className="img-fluid" src={img1} alt="img1" width="500px" height="400px" /></div>
+            <img
+              className="img-fluid"
+              src={img1}
+              alt="img1"
+              width="500px"
+              height="400px"
+            />
+          </div>
         </div>
         <div className="border"></div>
-        
+
         <div className="box2-1-sm">
           <div className="img">
-          <img className="img-fluid" src={img2} alt="img2" width="500px" height="400px" /></div>
+            <img
+              className="img-fluid"
+              src={img2}
+              alt="img2"
+              width="500px"
+              height="400px"
+            />
+          </div>
           <div className="box2-1-heading">
             <h1>Watch everywhere</h1>
             <h4>Stream unlimited movies and TV shows on your </h4>
@@ -44,52 +65,88 @@ const Body = () => {
           </div>
         </div>
         <div className="box2-1">
-        <div className="img">
-        
-          <img className="img-fluid" src={img2} alt="img2" width="500px" height="400px" /></div>
+          <div className="img">
+            <img
+              className="img-fluid"
+              src={img2}
+              alt="img2"
+              width="500px"
+              height="400px"
+            />
+          </div>
           <div className="box2-1-heading">
             <h1>Watch everywhere</h1>
             <h4>Stream unlimited movies and TV shows on your </h4>
             <h4>phone, tablet, laptop, and TV.</h4>
-           
           </div>
         </div>
         <div className="border"></div>
-        
+
         <div className="box2-1-sm">
           <div className="box2-1-heading">
-          <h1>Create profiles for kids</h1>
-            <h4>Send kids on adventures with their favorite  </h4>
-            <h4>characters in a space made just for them—free with your membership. </h4>
+            <h1>Create profiles for kids</h1>
+            <h4>Send kids on adventures with their favorite </h4>
+            <h4>
+              characters in a space made just for them—free with your
+              membership.{" "}
+            </h4>
           </div>
           <div className="img">
-          <img className="img-fluid" src={img3} alt="img3" width="500px" height="400px" /></div>
+            <img
+              className="img-fluid"
+              src={img3}
+              alt="img3"
+              width="500px"
+              height="400px"
+            />
+          </div>
         </div>
         <div className="box2-1">
           <div className="box2-1-heading">
-          <h1>Create profiles for kids</h1>
-            <h4>Send kids on adventures with their favorite  </h4>
-            <h4>characters in a space made just for them—free </h4> <h4>with your membership. </h4>
+            <h1>Create profiles for kids</h1>
+            <h4>Send kids on adventures with their favorite </h4>
+            <h4>characters in a space made just for them—free </h4>{" "}
+            <h4>with your membership. </h4>
           </div>
           <div className="img">
-          <img className="img-fluid" src={img3} alt="img3" width="500px" height="400px" /></div>
+            <img
+              className="img-fluid"
+              src={img3}
+              alt="img3"
+              width="500px"
+              height="400px"
+            />
+          </div>
         </div>
         <div className="border"></div>
         <div className="box2-1-sm">
-        <div className="img">
-          <img className="img-fluid" src={img4} alt="img4" width="500px" height="400px" /></div>
+          <div className="img">
+            <img
+              className="img-fluid"
+              src={img4}
+              alt="img4"
+              width="500px"
+              height="400px"
+            />
+          </div>
           <div className="box2-1-heading">
             <h1>Download your shows to watch offline</h1>
             <h4>Only available on ad-free plans.</h4>
-            
           </div>
         </div>
         <div className="box2-1">
-        <div className="img">
-          <img className="img-fluid" src={img4} alt="img4" width="500px" height="400px" /></div>
+          <div className="img">
+            <img
+              className="img-fluid"
+              src={img4}
+              alt="img4"
+              width="500px"
+              height="400px"
+            />
+          </div>
           <div className="box2-1-heading">
-          <h1>Download your shows </h1>
-           <h1> to watch offline</h1>
+            <h1>Download your shows </h1>
+            <h1> to watch offline</h1>
             <h4>Only available on ad-free plans.</h4>
           </div>
         </div>
@@ -265,8 +322,8 @@ const Body = () => {
               class="form-control"
               placeholder="Email address"
             ></input>
-            <button class="btn btn-danger" type="button">
-              Get Statrted
+            <button class="btn" type="button">
+              Get Statrted <AiOutlineRight />
             </button>
           </div>
           <p>Questions? Call 1-844-505-2993</p>
@@ -451,21 +508,18 @@ const Body = () => {
             </ul>
           </div>
           <div className="dropdown">
-            <button
-              className="btn"
-              onClick={handledrop}
-              type="button"
-             
-            >
-              English
+            <button className="btn dropdown-toggle" onClick={handledrop} type="button">
+            <AiOutlineGlobal size={28}/> English
             </button>
-            
-            {isOpen? (
-              <div className="dropdown-menu w-25 h-25">
+
+            {isOpen ? (
+              <div className="dropmenu">
                 <a className="dropdown-item">English</a>
-                <a className="dropdown-item">English</a>
+                <a className="dropdown-item">Espanol</a>
               </div>
-            ):(<div> </div>) }
+            ) : (
+              <div> </div>
+            )}
           </div>
         </div>
       </div>
