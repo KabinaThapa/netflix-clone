@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Brandlogo from "./Netflix-Brand-Logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 const SignIn = () => {
+  const [drop, setDrop]=useState(false)
+  const handledrop=()=>{
+    setDrop(!drop)
+  }
   return (
     <div className="outline3">
       <div className="container">
@@ -91,10 +95,23 @@ const SignIn = () => {
               
             </ul>
           </div>
+          <div className="dropdown">
+            <button className="btn dropdown-toggle" type="button" onClick={handledrop} data-toggle="dropdown">
+              English
+              </button>
+              {drop ? (
+                <div className="dropmenu">
+                  <a href="#">English</a>
+                  </div>
+                
+              ):(
+                <div></div>
+              )}
+           </div>
           
       </div>
-    </div>
-    <div className="lbox-md">
+   
+    <div className="lbox-sm">
             <ul className="list1">
               <li>
                 {" "}
@@ -139,8 +156,24 @@ const SignIn = () => {
               </li>
               
             </ul>
+            <div className="dropdown">
+            <button className="btn dropdown-toggle" type="button" onClick={handledrop} data-toggle="dropdown">
+              English
+              </button>
+              {drop ? (
+                <div className="dropmenu">
+                  <a href="#">English</a>
+                  <a href="#">Espanol</a>
+                  </div>
+                
+              ):(
+                <div></div>
+              )}
+           </div>
+            
           </div>
-          
+           
+           </div>
        </div>
         
   );

@@ -1,11 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import Body from "./Body"
-
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import Brandlogo from "./Netflix-Brand-Logo.png";
 import { Link } from "react-router-dom";
+import {AiOutlineGlobal, AiOutlineRight} from 'react-icons'
 
 
 const MainPage = () => {
@@ -26,19 +25,19 @@ const MainPage = () => {
             height="120px"
           />
           <div className="left">
-            <ul className="navbar-nav">
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
+            <div className="dropdown1">
+                <button
+                  className="btn dropdown-toggle"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   onClick={handledrop}
                 >
-                  English
-                </a>
+                  <AiOutlineGlobal /> English
+                </button>
+                
                 {isOpen ? (
-                  <div className="dropdown-menu w-500 h-500">
+                  <div className="dropmenu">
                     <a className="dropdown-item" href="#">
                       English
                     </a>
@@ -46,11 +45,11 @@ const MainPage = () => {
                 ) : (
                   <div></div>
                 )}
-              </li>
-              <li>
+             </div>
+              
                 <Link to ="SignIn">SignIn</Link>
-              </li>  
-            </ul>
+                
+            
           </div>
         </nav>
         <div className="box1">
@@ -70,14 +69,13 @@ const MainPage = () => {
                   placeholder="Email address"
                 ></input>
                 <button class="btn btn-danger" type="button">
-                  Get Statrted
+                  Get Statrted <AiOutlineRight/>
                 </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
       </div>
       <div className="outline2">
         <Body />
